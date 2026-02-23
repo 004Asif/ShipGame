@@ -278,7 +278,10 @@ class UHangarWidget : UUserWidget
     private void HandleBackClicked()
     {
         if (bShowDebug) Print("[Hangar] Back");
-        SetVisibility(ESlateVisibility::Collapsed);
+
+        AShipGameMode GameMode = Cast<AShipGameMode>(Gameplay::GetGameMode());
+        if (GameMode != nullptr)
+            GameMode.HideHangar();
     }
 
     UFUNCTION()

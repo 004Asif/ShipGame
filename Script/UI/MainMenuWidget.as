@@ -108,7 +108,7 @@ class UMainMenuWidget : UUserWidget
 
     // ---- Internal -------------------------------------------
 
-    private int CurrentShipIndex = 0;
+    int CurrentShipIndex = 0;
 
     // ---- Lifecycle ------------------------------------------
 
@@ -244,10 +244,10 @@ class UMainMenuWidget : UUserWidget
     {
         if (bShowDebug)
             Print("[MainMenu] HANGAR clicked");
-        // Opens hangar/upgrade screen — handled in Blueprint or via subsystem
-        UGameMenuSubsystem MenuSub = UGameMenuSubsystem::Get();
-        if (MenuSub != nullptr)
-            MenuSub.OnMenuStateChanged.Broadcast(EGameMenuState::None); // signal to open hangar overlay
+
+        AShipGameMode GameMode = Cast<AShipGameMode>(Gameplay::GetGameMode());
+        if (GameMode != nullptr)
+            GameMode.ShowHangar();
     }
 
     UFUNCTION()

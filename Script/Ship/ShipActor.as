@@ -203,7 +203,8 @@ class AShipActor : APawn
 
     // ---- Internal ------------------------------------------
 
-    private void ApplyShipConfig()
+    UFUNCTION()
+    void ApplyShipConfig()
     {
         // Push config values down to components
         Hover.HoverHeight = ShipConfig.HoverHeight;

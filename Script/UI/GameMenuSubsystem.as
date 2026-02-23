@@ -12,6 +12,9 @@ enum EGameMenuState
     MainMenu,
     Playing,
     Paused,
+    Hangar,
+    Store,
+    Settings,
 }
 
 class UGameMenuSubsystem : UScriptWorldSubsystem
