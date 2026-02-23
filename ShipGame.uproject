@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{F3011AB9-40F5-A909-A9CF-FEBB35039340}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ShipGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "AngelscriptEnhancedInput",
+			"Enabled": true
+		}
+	]
+}

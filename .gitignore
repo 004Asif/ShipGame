@@ -1,0 +1,19 @@
+# UE5 generated / build files
+Binaries/
+Intermediate/
+DerivedDataCache/
+Saved/
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.vsconfig
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Compiled AngelScript cache
+Script/.angelscript_cache/
